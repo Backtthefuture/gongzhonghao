@@ -1,0 +1,56 @@
+# 公众号工具链配置 - 复制为 config.yaml 后填入你自己的密钥
+# cp config.yaml.example config.yaml
+
+# ───────────── 必填 ─────────────
+
+# 微信公众号 API（这里使用 limyai 代理，自己有方案就替换 base_url + api_key）
+# 自建方案：参考 https://developers.weixin.qq.com/doc/offiaccount/Draft_Box/Add_draft.html
+wechat_api:
+  base_url: https://wx.limyai.com/api/openapi
+  api_key: YOUR_WECHAT_API_KEY
+
+# ImgBB 图床（用于把文章里的 base64 图片上传成 URL）
+# 申请：https://api.imgbb.com/
+imgbb:
+  api_key: YOUR_IMGBB_API_KEY
+
+# AI 图片生成（image_generator.py 默认走 YouMind CLI，需要 YOUMIND_API_KEY 环境变量）
+# 如果改用 OpenAI 兼容代理（如 yunwu.ai），把 image_generator.py 切回旧版逻辑
+image_api:
+  base_url: https://yunwu.ai
+  api_key: YOUR_IMAGE_API_KEY
+  model: gemini-3.1-flash-image-preview
+
+# ───────────── 可选 ─────────────
+
+# 文字改写 API（text_rewriter.py 用，可选）
+text_api:
+  base_url: https://yunwu.ai
+  api_key: YOUR_TEXT_API_KEY
+  model: claude-sonnet-4-6
+
+# 飞书开放平台（fetch_feishu.py 用，从飞书多维表格拉素材，可选）
+feishu:
+  app_id: YOUR_FEISHU_APP_ID
+  app_secret: YOUR_FEISHU_APP_SECRET
+
+# 飞书多维表格（fetch_feishu.py 用，可选）
+bitable:
+  base_id: YOUR_BITABLE_BASE_ID
+  table_id: YOUR_BITABLE_TABLE_ID
+
+# 字段映射（飞书字段名 → 逻辑名，按你的表结构改）
+field_mapping:
+  title: 标题
+  guest: 嘉宾
+  source: 来源平台
+  publish_time: 发布时间
+  original_link: 原内容链接
+  cover: 封面图
+  content: 摘要正文
+  submitted_time: 提交时间
+  quote1: 金句1
+  quote2: 金句2
+  quote3: 金句3
+  quote4: 金句4
+  quote5: 金句5

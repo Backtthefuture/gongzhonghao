@@ -1,0 +1,86 @@
+/* WeChat Formatter - Theme A: Tech Magazine (科技杂志风) */
+/* All properties must be WeChat-safe: no gradient, no box-shadow, no clamp, no animation */
+
+body { margin:0; padding:0; background-color:#ffffff; font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif; color:#2b2b2b; line-height:1.9; font-size:16px; }
+
+/* ── Hero ── clean with accent stripe */
+.hero { background-color:#1a1a2e; color:#ffffff; padding:56px 24px 44px; text-align:center; }
+.hero-accent { display:block; width:40px; height:4px; background-color:#e76f51; margin:0 auto 24px; }
+.hero-title { font-size:26px; font-weight:bold; line-height:1.5; color:#ffffff; margin-bottom:12px; letter-spacing:1px; }
+.hero-sub { font-size:14px; color:#999999; margin-bottom:0; letter-spacing:0.5px; }
+
+/* ── Content Area ── */
+.content { max-width:100%; padding:24px 20px 48px; margin:0 auto; }
+
+/* ── Section Header (H2) ── numbered magazine style */
+.sh { margin-top:48px; margin-bottom:24px; }
+.sh-num { font-size:36px; font-weight:bold; color:#f5d0c5; letter-spacing:2px; line-height:1; }
+.sh-part { font-size:11px; font-weight:bold; color:#e76f51; letter-spacing:4px; margin-top:0; }
+.sh-line { display:block; width:100%; height:1px; background-color:#e8e8e8; margin:10px 0; }
+.sh-title { font-size:20px; font-weight:bold; color:#1a1a2e; line-height:1.4; }
+
+/* ── Sub Title (H3) ── teal accent */
+.sub { font-size:17px; font-weight:bold; color:#1a1a2e; margin-top:36px; margin-bottom:14px; padding-left:14px; border-left:3px solid #2a9d8f; }
+
+/* ── Paragraph ── */
+.p { margin-bottom:18px; text-align:justify; font-size:16px; color:#333333; line-height:2.0; }
+
+/* ── 5-Level Emphasis System ── */
+/* L1: Yellow highlighter (荧光笔) — for absolute key insights */
+.hl { background-color:#fff3b0; padding:2px 4px; font-weight:bold; color:#1a1a2e; }
+
+/* L2: Bold + accent underline — for secondary key points */
+.ul { font-weight:bold; color:#1a1a2e; border-bottom:2px solid #e76f51; padding-bottom:1px; }
+
+/* L3: Brand color text — for brand/topic emphasis */
+.brand { color:#e76f51; font-weight:bold; }
+
+/* L4: Regular bold — for general emphasis */
+.b { color:#1a1a2e; font-weight:bold; }
+
+/* L5: Inline code / term — for technical terms */
+.code { background-color:#f3f4f6; color:#e76f51; padding:2px 6px; border-radius:3px; font-size:14px; font-family:'SF Mono','Fira Code','Consolas',monospace; }
+
+/* ── Highlight / Insight Box ── dark card with accent border */
+.hbox { background-color:#1a1a2e; color:#ffffff; padding:24px 20px; border-radius:8px; margin:28px 0; font-size:16px; line-height:1.9; border-left:4px solid #e76f51; }
+.ho { color:#e76f51; font-weight:bold; }
+
+/* ── Quote Block ── refined */
+.qb { margin:24px 0; padding:18px 20px; background-color:#f9f9f9; border-left:3px solid #cccccc; font-size:15px; color:#666666; line-height:1.8; }
+
+/* ── Question Box ── */
+.qbox { background-color:#fffdf5; border:1px solid #f0e6d0; border-radius:8px; padding:20px 24px; margin:24px 0; }
+.qi { margin-bottom:8px; font-size:15px; color:#333333; }
+
+/* ── Case Badge ── for future use */
+.case-badge { display:inline-block; background-color:#e76f51; color:#ffffff; font-size:11px; font-weight:bold; letter-spacing:2px; padding:4px 12px; border-radius:3px; margin-bottom:10px; }
+
+/* ── Data Card ── for future use */
+.data-card { background-color:#f8f8fa; border-radius:8px; padding:20px 20px; margin:24px 0; text-align:center; border:1px solid #eeeeee; }
+.data-num { font-size:36px; font-weight:bold; color:#e76f51; display:block; line-height:1.2; }
+.data-label { font-size:13px; color:#888888; margin-top:6px; display:block; }
+
+/* ── Image ── */
+.iw { margin:28px 0; text-align:center; }
+.iw img { max-width:100%; height:auto; border-radius:6px; }
+.ic { font-size:12px; color:#aaaaaa; margin-top:8px; text-align:center; }
+
+/* ── List ── */
+.li { margin-bottom:12px; padding-left:4px; font-size:15px; color:#333333; line-height:1.9; }
+.oli { margin-bottom:14px; font-size:15px; color:#333333; line-height:1.9; }
+.nc { display:inline-block; width:22px; height:22px; background-color:#e76f51; color:#ffffff; border-radius:50%; font-size:13px; font-weight:bold; text-align:center; line-height:22px; margin-right:8px; }
+
+/* ── Divider ── minimal line */
+.div { text-align:center; margin:40px 0; }
+.div-line { display:block; width:48px; height:2px; background-color:#e0e0e0; margin:0 auto; }
+
+/* ── Ending ── */
+.end { text-align:center; padding:36px 0 16px; margin-top:48px; }
+.end-line { display:block; width:48px; height:2px; background-color:#e76f51; margin:0 auto 24px; }
+.et { text-align:center; color:#666666; font-size:15px; line-height:1.8; margin-bottom:12px; }
+.fq { margin:20px 0; padding:16px 20px; background-color:#f8f8fa; border-left:3px solid #2a9d8f; font-size:15px; color:#555555; text-align:center; }
+.fl { font-size:20px; color:#1a1a2e; font-weight:bold; text-align:center; margin-top:20px; line-height:1.6; }
+
+/* ── Source Note ── */
+.sn { font-size:12px; color:#aaaaaa; text-align:center; margin-top:36px; padding-top:16px; border-top:1px solid #f0f0f0; }
+.sn a { color:#2a9d8f; text-decoration:none; }
